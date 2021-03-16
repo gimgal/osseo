@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+	<h1><a href="index.html">Hi, DIKIDS♥</a></h1>
+	<input id="night_day" type="button" value="night" onclick="
+     var target = document.querySelector('body');
+		 if(this.value === 'night'){
+			 target.style.backgroundColor = 'black';
+			 target.style.color = 'white';
+			 this.value = 'day';
+
+			 var alist = document.querySelectorAll('a');
+			 var i = 0;
+			 while(i < alist.length){
+				 alist[i].style.color = 'powderblue';
+				 i = i + 1;
+			 }
+		 } else {
+			 target.style.backgroundColor = 'white';
+			 target.style.color = 'black';
+			 this.value = 'night';
+
+			 var alist = document.querySelectorAll('a');
+			 var i = 0;
+			 while(i < alist.length){
+				 alist[i].style.color = 'blue';
+				 i = i + 1;
+			 }
+		 }
+
+
+	<div id="grid">
+	<ol>
+		<li><a href="1.html" class="saw">Introduce</a></li>
+		<li><a href="2.html" class="saw" id="active">Members</a></li>
+		<li><a href="3.html">Blog</a></li>
+	</ol>
+	<div id="article">
+		<h2>블로그도 궁금하즤?</h2>
+		<br>
+			<a href="https://digital-kidscafe.tistory.com/" target="_blank" title="blog">바로가기 누르세용!</a>
+	</div>
+	<!--
+	<body>
+	<h1><a href="index.html"><font color="red">더보기</font></a></h1>
+	<ol>
+		<li><a href="1.html"><font color="red">메인</font></a></li>
+		<li><a href="2.html">서브</a></li>
+		<li><a href="3.html">서브</a></li>
+	</ol>
+	-->
+</body>
+
+</html>
